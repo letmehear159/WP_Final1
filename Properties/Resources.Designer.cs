@@ -123,6 +123,16 @@ namespace WP_Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Search_512px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Search_512px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_subtract_208px {
             get {
                 object obj = ResourceManager.GetObject("icons8_subtract_208px", resourceCulture);
@@ -166,6 +176,26 @@ namespace WP_Final_Project.Properties {
         internal static System.Drawing.Bitmap icons8_work_480px_12 {
             get {
                 object obj = ResourceManager.GetObject("icons8_work_480px_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_worker_480px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_worker_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_worker_480px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_worker_480px_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

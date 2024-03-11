@@ -79,29 +79,31 @@ namespace WP_Final_Project
         private void Form1_Load(object sender, EventArgs e)
         {
             workerList2.dropDownOccupation.SelectedIndex = 0;
-            workerList2.ddAddress.SelectedIndex = 0;
-            workerList2.ddRate.SelectedIndex = 0;
-            workerList2.ddExp.SelectedIndex = 0;
-            workerList2.gvWorkerList.Rows.Add(new object[]
+            //workerList2.ddAddress.SelectedIndex = 0;
+            //workerList2.ddRate.SelectedIndex = 0;
+            //workerList2.ddExp.SelectedIndex = 0;
+            for (int i = 0; i < 100; i++)
             {
-                "String",3
-            });
-            workerList2.gvWorkerList.Rows.Add(new object[]
+
+                workerList2.kryptonDataGridView1.Rows.Add(new object[]
            {
                 "String",3
+
            });
-            workerList2.gvWorkerList.Rows.Add(new object[]
-           {
-                "String",3
-           });
-            workerList2.gvWorkerList.Rows.Add(new object[]
-           {
-                "String",3
-           });
-            workerList2.gvWorkerList.Rows.Add(new object[]
-           {
-                "String",3
-           });
+
+            }
+
+
+        }
+
+        private void bunifuLabel2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
