@@ -51,8 +51,8 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvWorkerList = new Krypton.Toolkit.KryptonDataGridView();
+            this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,7 +62,7 @@
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvWorkerList)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -625,13 +625,14 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1005, 45);
             this.bunifuGradientPanel1.TabIndex = 3;
             // 
-            // kryptonDataGridView1
+            // gvWorkerList
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.kryptonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.kryptonDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.kryptonDataGridView1.ColumnHeadersHeight = 45;
-            this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gvWorkerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gvWorkerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvWorkerList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gvWorkerList.ColumnHeadersHeight = 45;
+            this.gvWorkerList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column7,
             this.Column8,
             this.Column9,
@@ -640,30 +641,37 @@
             this.Column12,
             this.Column13,
             this.Column14});
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(-1, 66);
-            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.ReadOnly = true;
-            this.kryptonDataGridView1.RowHeadersVisible = false;
+            this.gvWorkerList.Location = new System.Drawing.Point(-1, 66);
+            this.gvWorkerList.Name = "gvWorkerList";
+            this.gvWorkerList.ReadOnly = true;
+            this.gvWorkerList.RowHeadersVisible = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.kryptonDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.kryptonDataGridView1.RowTemplate.DividerHeight = 3;
-            this.kryptonDataGridView1.RowTemplate.Height = 45;
-            this.kryptonDataGridView1.RowTemplate.ReadOnly = true;
-            this.kryptonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(1005, 446);
-            this.kryptonDataGridView1.TabIndex = 4;
+            this.gvWorkerList.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.gvWorkerList.RowTemplate.DividerHeight = 5;
+            this.gvWorkerList.RowTemplate.Height = 45;
+            this.gvWorkerList.RowTemplate.ReadOnly = true;
+            this.gvWorkerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gvWorkerList.Size = new System.Drawing.Size(1005, 446);
+            this.gvWorkerList.TabIndex = 4;
+            this.gvWorkerList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.kryptonDataGridView1_CellFormatting);
+            this.gvWorkerList.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.kryptonDataGridView1_RowsAdded);
+            this.gvWorkerList.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.kryptonDataGridView1_RowsRemoved);
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Column7";
+            this.Column7.Image = global::WP_Final_Project.Properties.Resources.icons8_account_480px;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
+            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Column8";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
+            this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // Column9
             // 
@@ -706,13 +714,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.Controls.Add(this.kryptonDataGridView1);
+            this.Controls.Add(this.gvWorkerList);
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "WorkerList";
             this.Size = new System.Drawing.Size(1005, 519);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvWorkerList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -734,7 +742,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        public Krypton.Toolkit.KryptonDataGridView gvWorkerList;
+        private System.Windows.Forms.DataGridViewImageColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
@@ -742,6 +751,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        public Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
     }
 }
