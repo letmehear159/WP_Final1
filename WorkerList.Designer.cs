@@ -36,6 +36,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -51,18 +52,19 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.gvWorkerList = new Krypton.Toolkit.KryptonDataGridView();
-            this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvWorkerList1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvWorkerList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvWorkerList1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -625,102 +627,108 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1005, 45);
             this.bunifuGradientPanel1.TabIndex = 3;
             // 
-            // gvWorkerList
+            // gvWorkerList1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.gvWorkerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gvWorkerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gvWorkerList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gvWorkerList.ColumnHeadersHeight = 45;
-            this.gvWorkerList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13,
-            this.Column14});
-            this.gvWorkerList.Location = new System.Drawing.Point(-1, 66);
-            this.gvWorkerList.Name = "gvWorkerList";
-            this.gvWorkerList.ReadOnly = true;
-            this.gvWorkerList.RowHeadersVisible = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.gvWorkerList.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.gvWorkerList.RowTemplate.DividerHeight = 5;
-            this.gvWorkerList.RowTemplate.Height = 45;
-            this.gvWorkerList.RowTemplate.ReadOnly = true;
-            this.gvWorkerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvWorkerList.Size = new System.Drawing.Size(1005, 446);
-            this.gvWorkerList.TabIndex = 4;
-            this.gvWorkerList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.kryptonDataGridView1_CellFormatting);
-            this.gvWorkerList.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.kryptonDataGridView1_RowsAdded);
-            this.gvWorkerList.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.kryptonDataGridView1_RowsRemoved);
+            this.gvWorkerList1.AllowUserToResizeColumns = false;
+            this.gvWorkerList1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvWorkerList1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gvWorkerList1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvWorkerList1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gvWorkerList1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gvWorkerList1.ColumnHeadersHeight = 45;
+            this.gvWorkerList1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.gvWorkerList1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column15,
+            this.Column16});
+            this.gvWorkerList1.Location = new System.Drawing.Point(1, 65);
+            this.gvWorkerList1.Name = "gvWorkerList1";
+            this.gvWorkerList1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvWorkerList1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gvWorkerList1.RowHeadersVisible = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Red;
+            this.gvWorkerList1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.gvWorkerList1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Silver;
+            this.gvWorkerList1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gvWorkerList1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.LightGray;
+            this.gvWorkerList1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(75)))), ((int)(((byte)(177)))));
+            this.gvWorkerList1.RowTemplate.Height = 45;
+            this.gvWorkerList1.RowTemplate.ReadOnly = true;
+            this.gvWorkerList1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gvWorkerList1.Size = new System.Drawing.Size(1004, 750);
+            this.gvWorkerList1.TabIndex = 5;
+            this.gvWorkerList1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gvWorkerList1_CellFormatting);
+            this.gvWorkerList1.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.gvWorkerList1_CellPainting);
             // 
-            // Column7
+            // Column1
             // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.Image = global::WP_Final_Project.Properties.Resources.icons8_account_480px;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column1.FillWeight = 30F;
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Column8
+            // Column2
             // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
             // 
-            // Column9
+            // Column3
             // 
-            this.Column9.HeaderText = "Column9";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
             // 
-            // Column10
+            // Column4
             // 
-            this.Column10.HeaderText = "Column10";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
             // 
-            // Column11
+            // Column5
             // 
-            this.Column11.HeaderText = "Column11";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
+            this.Column5.HeaderText = "Column5";
+            this.Column5.Name = "Column5";
             // 
-            // Column12
+            // Column6
             // 
-            this.Column12.HeaderText = "Column12";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
+            this.Column6.HeaderText = "Column6";
+            this.Column6.Name = "Column6";
             // 
-            // Column13
+            // Column15
             // 
-            this.Column13.HeaderText = "Column13";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
+            this.Column15.HeaderText = "Column15";
+            this.Column15.Name = "Column15";
             // 
-            // Column14
+            // Column16
             // 
-            this.Column14.HeaderText = "Column14";
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
+            this.Column16.HeaderText = "Column16";
+            this.Column16.Name = "Column16";
             // 
             // WorkerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.Controls.Add(this.gvWorkerList);
+            this.Controls.Add(this.gvWorkerList1);
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "WorkerList";
-            this.Size = new System.Drawing.Size(1005, 519);
+            this.Size = new System.Drawing.Size(1005, 750);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvWorkerList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvWorkerList1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -742,14 +750,15 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        public Krypton.Toolkit.KryptonDataGridView gvWorkerList;
-        private System.Windows.Forms.DataGridViewImageColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        public System.Windows.Forms.DataGridView gvWorkerList1;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
     }
 }
