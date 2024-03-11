@@ -35,9 +35,10 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
+            this.Vscroll = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.workerList2 = new WP_Final_Project.WorkerList();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
@@ -55,7 +56,7 @@
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.workerList2 = new WP_Final_Project.WorkerList();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -71,46 +72,47 @@
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 0;
-            this.bunifuElipse1.TargetControl = this.bunifuVScrollBar1;
+            this.bunifuElipse1.TargetControl = this.Vscroll;
             // 
-            // bunifuVScrollBar1
+            // Vscroll
             // 
-            this.bunifuVScrollBar1.AllowCursorChanges = true;
-            this.bunifuVScrollBar1.AllowHomeEndKeysDetection = false;
-            this.bunifuVScrollBar1.AllowIncrementalClickMoves = true;
-            this.bunifuVScrollBar1.AllowMouseDownEffects = true;
-            this.bunifuVScrollBar1.AllowMouseHoverEffects = true;
-            this.bunifuVScrollBar1.AllowScrollingAnimations = true;
-            this.bunifuVScrollBar1.AllowScrollKeysDetection = true;
-            this.bunifuVScrollBar1.AllowScrollOptionsMenu = true;
-            this.bunifuVScrollBar1.AllowShrinkingOnFocusLost = false;
-            this.bunifuVScrollBar1.BackgroundColor = System.Drawing.Color.DarkGray;
-            this.bunifuVScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar1.BackgroundImage")));
-            this.bunifuVScrollBar1.BindingContainer = null;
-            this.bunifuVScrollBar1.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.BorderRadius = 15;
-            this.bunifuVScrollBar1.BorderThickness = 1;
-            this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
-            this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1011, 68);
-            this.bunifuVScrollBar1.Maximum = 100;
-            this.bunifuVScrollBar1.Minimum = 0;
-            this.bunifuVScrollBar1.MinimumThumbLength = 18;
-            this.bunifuVScrollBar1.Name = "bunifuVScrollBar1";
-            this.bunifuVScrollBar1.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
-            this.bunifuVScrollBar1.OnDisable.ThumbColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.DarkGray;
-            this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(17, 444);
-            this.bunifuVScrollBar1.SmallChange = 1;
-            this.bunifuVScrollBar1.TabIndex = 2;
-            this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 43;
-            this.bunifuVScrollBar1.ThumbMargin = 1;
-            this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
-            this.bunifuVScrollBar1.Value = 0;
+            this.Vscroll.AllowCursorChanges = true;
+            this.Vscroll.AllowHomeEndKeysDetection = false;
+            this.Vscroll.AllowIncrementalClickMoves = true;
+            this.Vscroll.AllowMouseDownEffects = true;
+            this.Vscroll.AllowMouseHoverEffects = true;
+            this.Vscroll.AllowScrollingAnimations = true;
+            this.Vscroll.AllowScrollKeysDetection = true;
+            this.Vscroll.AllowScrollOptionsMenu = true;
+            this.Vscroll.AllowShrinkingOnFocusLost = false;
+            this.Vscroll.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.Vscroll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Vscroll.BackgroundImage")));
+            this.Vscroll.BindingContainer = null;
+            this.Vscroll.BorderColor = System.Drawing.Color.Silver;
+            this.Vscroll.BorderRadius = 15;
+            this.Vscroll.BorderThickness = 1;
+            this.Vscroll.DurationBeforeShrink = 2000;
+            this.Vscroll.LargeChange = 10;
+            this.Vscroll.Location = new System.Drawing.Point(1011, 68);
+            this.Vscroll.Maximum = 100;
+            this.Vscroll.Minimum = 0;
+            this.Vscroll.MinimumThumbLength = 18;
+            this.Vscroll.Name = "Vscroll";
+            this.Vscroll.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.Vscroll.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
+            this.Vscroll.OnDisable.ThumbColor = System.Drawing.Color.Silver;
+            this.Vscroll.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.Vscroll.ScrollBarColor = System.Drawing.Color.DarkGray;
+            this.Vscroll.ShrinkSizeLimit = 3;
+            this.Vscroll.Size = new System.Drawing.Size(17, 444);
+            this.Vscroll.SmallChange = 1;
+            this.Vscroll.TabIndex = 2;
+            this.Vscroll.ThumbColor = System.Drawing.Color.Gray;
+            this.Vscroll.ThumbLength = 43;
+            this.Vscroll.ThumbMargin = 1;
+            this.Vscroll.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
+            this.Vscroll.Value = 0;
+            this.Vscroll.Scroll += new System.EventHandler<Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs>(this.bunifuVScrollBar1_Scroll);
             // 
             // tabControl1
             // 
@@ -126,7 +128,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Silver;
-            this.tabPage1.Controls.Add(this.bunifuVScrollBar1);
+            this.tabPage1.Controls.Add(this.Vscroll);
             this.tabPage1.Controls.Add(this.workerList2);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
@@ -134,6 +136,13 @@
             this.tabPage1.Size = new System.Drawing.Size(1031, 507);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
+            // 
+            // workerList2
+            // 
+            this.workerList2.Location = new System.Drawing.Point(35, 3);
+            this.workerList2.Name = "workerList2";
+            this.workerList2.Size = new System.Drawing.Size(993, 509);
+            this.workerList2.TabIndex = 1;
             // 
             // tabPage2
             // 
@@ -210,7 +219,6 @@
             this.bunifuLabel2.Text = "Worker Menu";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel2.Click += new System.EventHandler(this.bunifuLabel2_Click_1);
             // 
             // pictureBox1
             // 
@@ -248,11 +256,8 @@
             this.pbExit.TabIndex = 0;
             this.pbExit.TabStop = false;
             this.pbExit.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.pbExit.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
             this.pbExit.MouseLeave += new System.EventHandler(this.pbExit_MouseLeave);
-            this.pbExit.MouseHover += new System.EventHandler(this.pbExit_MouseHover);
             this.pbExit.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbExit_MouseMove);
-            this.pbExit.Move += new System.EventHandler(this.pbExit_Move);
             // 
             // pictureBox2
             // 
@@ -383,7 +388,6 @@
             this.bunifuButton2.TextMarginLeft = 0;
             this.bunifuButton2.TextPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bunifuButton2.UseDefaultRadiusAndThickness = true;
-            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click);
             // 
             // bunifuButton1
             // 
@@ -491,7 +495,6 @@
             this.bunifuPictureBox1.TabIndex = 1;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // bunifuButton3
             // 
@@ -602,14 +605,12 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(249, 555);
             this.bunifuPanel1.TabIndex = 5;
-            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
-            // workerList2
+            // imageList1
             // 
-            this.workerList2.Location = new System.Drawing.Point(35, 3);
-            this.workerList2.Name = "workerList2";
-            this.workerList2.Size = new System.Drawing.Size(993, 509);
-            this.workerList2.TabIndex = 1;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "icons8_account_480px.png");
             // 
             // Form1
             // 
@@ -664,7 +665,8 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Label label2;
-        private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
+        private System.Windows.Forms.ImageList imageList1;
+        public Bunifu.UI.WinForms.BunifuVScrollBar Vscroll;
     }
 }
 
