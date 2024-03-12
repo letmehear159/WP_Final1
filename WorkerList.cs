@@ -84,33 +84,5 @@ namespace WP_Final_Project
             }
 
         }
-
-        private void gvWorkerList1_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
-        {
-            e.AdvancedBorderStyle.All = DataGridViewAdvancedCellBorderStyle.None;
-        }
-
-        private void gvWorkerList1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            int value = 4;
-            if (e.RowIndex % value == 0)
-            {
-                // Tùy chỉnh màu nền cho hàng chẵn
-                gvWorkerList1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.FromArgb(41, 43, 51);
-            }
-            else if (e.RowIndex % value == 1)
-            {
-                // Tùy chỉnh màu nền cho hàng lẻ
-                gvWorkerList1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.FromArgb(23, 54, 70);
-            }
-            else if (e.RowIndex % value == 2)
-            {
-                gvWorkerList1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.FromArgb(14, 20, 46);
-            }
-            else if (e.RowIndex % value == 3)
-            {
-                gvWorkerList1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.FromArgb(11, 11, 14);
-            }
-        }
     }
 }
