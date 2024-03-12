@@ -55,3 +55,4 @@ D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.csproj.Gener
 D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.exe.licenses
 D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.exe
 D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.pdb
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.csproj.CoreCompileInputs.cache

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|d:\\coding\\vs\\wipr\\finalproject\\wp_final1\\ucjoblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:ucjoblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|d:\\coding\\vs\\wipr\\finalproject\\wp_final1\\accountsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:accountsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|d:\\coding\\vs\\wipr\\finalproject\\wp_final1\\workerlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:workerlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|d:\\coding\\vs\\wipr\\finalproject\\wp_final1\\workerlist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:workerlist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\workerlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -17,6 +21,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|d:\\coding\\vs\\wipr\\finalproject\\wp_final1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\ucjobcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:ucjobcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\ucjobcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:ucjobcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\accountsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:accountsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\ucjoblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:ucjoblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\jobaddinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:jobaddinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\obj\\release\\.netframework,version=v4.7.2.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8F37B5A-77EB-4A9B-A508-25CB9D62DCF4}|WP Final Project.csproj|solutionrelative:obj\\release\\.netframework,version=v4.7.2.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,47 +78,149 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UCJobList.cs [Design]",
-              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\UCJobList.cs",
-              "RelativeDocumentMoniker": "UCJobList.cs",
-              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\UCJobList.cs [Design]",
-              "RelativeToolTip": "UCJobList.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "WorkerList.cs",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\WorkerList.cs",
+              "RelativeDocumentMoniker": "WorkerList.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\WorkerList.cs",
+              "RelativeToolTip": "WorkerList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T20:27:24.16Z",
+              "WhenOpened": "2024-03-12T20:59:42.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkerList.Designer.cs",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\WorkerList.Designer.cs",
+              "RelativeDocumentMoniker": "WorkerList.Designer.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\WorkerList.Designer.cs",
+              "RelativeToolTip": "WorkerList.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T20:59:38.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorkerList.cs [Design]",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\WorkerList.cs",
+              "RelativeDocumentMoniker": "WorkerList.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\WorkerList.cs [Design]",
+              "RelativeToolTip": "WorkerList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T12:30:31.849Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "AccountSetting.cs [Design]",
               "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\AccountSetting.cs",
               "RelativeDocumentMoniker": "AccountSetting.cs",
               "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\AccountSetting.cs [Design]",
               "RelativeToolTip": "AccountSetting.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T12:34:16.684Z",
+              "WhenOpened": "2024-03-11T12:34:16.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UCJobCard.cs [Design]",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\UCJobCard.cs",
+              "RelativeDocumentMoniker": "UCJobCard.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\UCJobCard.cs [Design]",
+              "RelativeToolTip": "UCJobCard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T20:46:15.06Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WorkerList.cs [Design]",
-              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\WorkerList.cs",
-              "RelativeDocumentMoniker": "WorkerList.cs",
-              "ToolTip": "C:\\UTE\\Test\\WP_Final1\\WorkerList.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T12:30:31.849Z"
+              "WhenOpened": "2024-03-12T20:51:48.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "UCJobCard.Designer.cs",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\UCJobCard.Designer.cs",
+              "RelativeDocumentMoniker": "UCJobCard.Designer.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\UCJobCard.Designer.cs",
+              "RelativeToolTip": "UCJobCard.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T20:52:38.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\UTE\\Test\\WP_Final1\\Form1.cs [Design]",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T12:30:31.853Z"
+              "WhenOpened": "2024-03-11T12:30:31.853Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAADwv44AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T20:51:53.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UCJobList.cs [Design]",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\UCJobList.cs",
+              "RelativeDocumentMoniker": "UCJobList.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\UCJobList.cs [Design]",
+              "RelativeToolTip": "UCJobList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T20:27:24.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JobAddInfo.cs [Design]",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\JobAddInfo.cs",
+              "RelativeDocumentMoniker": "JobAddInfo.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\JobAddInfo.cs [Design]",
+              "RelativeToolTip": "JobAddInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T20:50:05.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": ".NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+              "DocumentMoniker": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\obj\\Release\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "obj\\Release\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+              "ToolTip": "D:\\coding\\VS\\WIPR\\FINALPROJECT\\WP_Final1\\obj\\Release\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+              "RelativeToolTip": "obj\\Release\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T20:49:49.822Z"
             }
           ]
         },

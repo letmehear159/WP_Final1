@@ -1,4 +1,6 @@
-﻿namespace WP_Final_Project
+﻿using System;
+
+namespace WP_Final_Project
 {
     partial class Form1
     {
@@ -641,6 +643,11 @@
             this.bunifuPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
