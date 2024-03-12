@@ -52,10 +52,6 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
       <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
-    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
@@ -105,27 +101,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="JobAddInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="JobAddInfo.Designer.cs">
-      <DependentUpon>JobAddInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
-    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UCJobCard.cs">
+    <Compile Include="AccountSetting.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCJobCard.Designer.cs">
-      <DependentUpon>UCJobCard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UCJobList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCJobList.Designer.cs">
-      <DependentUpon>UCJobList.cs</DependentUpon>
+    <Compile Include="AccountSetting.Designer.cs">
+      <DependentUpon>AccountSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkerList.cs">
       <SubType>UserControl</SubType>
@@ -133,18 +115,12 @@
     <Compile Include="WorkerList.Designer.cs">
       <DependentUpon>WorkerList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountSetting.resx">
+      <DependentUpon>AccountSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JobAddInfo.resx">
-      <DependentUpon>JobAddInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\WP_Final_Project.Form1.resources" />
-    <EmbeddedResource Include="obj\Debug\WP_Final_Project.JobInfo.resources" />
-    <EmbeddedResource Include="obj\Debug\WP_Final_Project.Properties.Resources.resources" />
-    <EmbeddedResource Include="obj\Debug\WP_Final_Project.UCJobCard.resources" />
-    <EmbeddedResource Include="obj\Debug\WP_Final_Project.UCJobList.resources" />
-    <EmbeddedResource Include="obj\Debug\WP_Final_Project.WorkerList.resources" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,42 +132,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UCJobCard.resx">
-      <DependentUpon>UCJobCard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCJobList.resx">
-      <DependentUpon>UCJobList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="WorkerList.resx">
       <DependentUpon>WorkerList.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include=".vs\ProjectSettings.json" />
-    <None Include=".vs\slnx.sqlite" />
-    <None Include=".vs\VSWorkspaceState.json" />
-    <None Include=".vs\WP Final Project.csproj.dtbcache.json" />
-    <None Include=".vs\WP Final Project\FileContentIndex\2efa1de4-5828-449c-af26-e61349299323.vsidx" />
-    <None Include=".vs\WP Final Project\FileContentIndex\4a6184e4-db0f-4aef-a415-7a0067a28908.vsidx" />
-    <None Include=".vs\WP Final Project\FileContentIndex\a86bfcaa-31ba-4fdf-84de-394786ca294f.vsidx" />
-    <None Include=".vs\WP Final Project\FileContentIndex\fa125edd-64ab-4b03-a624-b0120f7a640c.vsidx" />
-    <None Include=".vs\WP Final Project\FileContentIndex\fb25ba1f-8ce2-41ce-8afe-c4e1dc74b649.vsidx" />
-    <None Include=".vs\WP Final Project\v17\DocumentLayout.json" />
-    <None Include=".vs\WP_Final1\FileContentIndex\17dac6ac-3771-4223-bfd9-7c1aed9d2940.vsidx" />
-    <None Include=".vs\WP_Final1\FileContentIndex\33b821b1-0fbd-4951-b54d-1bc813f02320.vsidx" />
-    <None Include=".vs\WP_Final1\v17\DocumentLayout.json" />
-    <None Include="bin\Debug\WP Final Project.exe.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\WP Final Project.csproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\WP Final Project.csproj.CopyComplete" />
-    <None Include="obj\Debug\WP Final Project.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\WP Final Project.csproj.GenerateResource.cache" />
-    <None Include="obj\Debug\WP Final.3EF58AF2.Up2Date" />
-    <None Include="obj\Release\WP Final Project.csproj.AssemblyReference.cache" />
     <None Include="packages.config" />
-    <None Include="packages\Krypton.Toolkit.80.24.3.64\.signature.p7s" />
-    <None Include="packages\Krypton.Toolkit.80.24.3.64\Krypton.Toolkit.80.24.3.64.nupkg" />
-    <None Include="packages\Krypton.Toolkit.80.24.3.64\License.md" />
-    <None Include="packages\Krypton.Toolkit.80.24.3.64\README.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -249,72 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_Search_512px_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\Bunifu.Licensing.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.1.5.3.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll" />
-    <Content Include="bin\Debug\Bunifu.UI.WinForms.Deprecated.dll" />
-    <Content Include="bin\Debug\Krypton.Toolkit.dll" />
-    <Content Include="bin\Debug\Krypton.Toolkit.xml" />
-    <Content Include="bin\Debug\WP Final Project.exe" />
-    <Content Include="bin\Debug\WP Final Project.pdb" />
-    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
-    <Content Include="obj\Debug\WP Final Project.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\WP Final Project.exe" />
-    <Content Include="obj\Debug\wp final project.exe.licenses" />
-    <Content Include="obj\Debug\WP Final Project.pdb" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\Krypton Stable.png" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net462\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net462\Krypton.Toolkit.xml" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net471\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net471\Krypton.Toolkit.xml" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net472\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net472\Krypton.Toolkit.xml" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net47\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net47\Krypton.Toolkit.xml" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net481\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net481\Krypton.Toolkit.xml" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net48\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net48\Krypton.Toolkit.xml" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net6.0-windows7.0\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net6.0-windows7.0\Krypton.Toolkit.xml" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net7.0-windows7.0\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net7.0-windows7.0\Krypton.Toolkit.xml" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net8.0-windows7.0\Krypton.Toolkit.dll" />
-    <Content Include="packages\Krypton.Toolkit.80.24.3.64\lib\net8.0-windows7.0\Krypton.Toolkit.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

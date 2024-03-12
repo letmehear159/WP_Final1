@@ -73,10 +73,5 @@ namespace WP_Final_Project
         {
             Vscroll.Maximum = workerList2.gvWorkerList.RowCount - 1;
         }
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

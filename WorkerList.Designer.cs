@@ -30,14 +30,25 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorkerList));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.gvWorkerList = new Krypton.Toolkit.KryptonDataGridView();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuCheckBox4 = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.bunifuCheckBox3 = new Bunifu.UI.WinForms.BunifuCheckBox();
@@ -47,22 +58,11 @@
             this.bunifuDropdown2 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuDropdown1 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.dropDownOccupation = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.gvWorkerList = new Krypton.Toolkit.KryptonDataGridView();
-            this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvWorkerList)).BeginInit();
+            this.bunifuPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -70,16 +70,133 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this.pictureBox1;
             // 
-            // pictureBox1
+            // bunifuLabel1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::WP_Final_Project.Properties.Resources.icons8_Search_512px_1;
-            this.pictureBox1.Location = new System.Drawing.Point(265, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel1.Location = new System.Drawing.Point(12, 12);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(86, 20);
+            this.bunifuLabel1.TabIndex = 0;
+            this.bunifuLabel1.Text = "bunifuLabel1";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
+            // 
+            // gvWorkerList
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.gvWorkerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gvWorkerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvWorkerList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gvWorkerList.ColumnHeadersHeight = 45;
+            this.gvWorkerList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13,
+            this.Column14,
+            this.Column7});
+            this.gvWorkerList.Location = new System.Drawing.Point(-1, 81);
+            this.gvWorkerList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gvWorkerList.Name = "gvWorkerList";
+            this.gvWorkerList.ReadOnly = true;
+            this.gvWorkerList.RowHeadersVisible = false;
+            this.gvWorkerList.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.gvWorkerList.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.gvWorkerList.RowTemplate.DividerHeight = 5;
+            this.gvWorkerList.RowTemplate.Height = 45;
+            this.gvWorkerList.RowTemplate.ReadOnly = true;
+            this.gvWorkerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gvWorkerList.Size = new System.Drawing.Size(1340, 549);
+            this.gvWorkerList.TabIndex = 4;
+            this.gvWorkerList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.kryptonDataGridView1_CellFormatting);
+            this.gvWorkerList.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.kryptonDataGridView1_RowsAdded);
+            this.gvWorkerList.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.kryptonDataGridView1_RowsRemoved);
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Column8";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Column9";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Column10";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Column11";
+            this.Column11.MinimumWidth = 6;
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Column12";
+            this.Column12.MinimumWidth = 6;
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "Column13";
+            this.Column13.MinimumWidth = 6;
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "Column14";
+            this.Column14.MinimumWidth = 6;
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(68)))), ((int)(((byte)(128)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(212)))), ((int)(((byte)(53)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(6)))), ((int)(((byte)(90)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(65)))), ((int)(((byte)(214)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 80);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1340, 55);
+            this.bunifuGradientPanel1.TabIndex = 3;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Column7";
+            this.Column7.Image = global::WP_Final_Project.Properties.Resources.icons8_account_480px;
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // bunifuPanel1
             // 
@@ -102,9 +219,10 @@
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1005, 67);
+            this.bunifuPanel1.Size = new System.Drawing.Size(1340, 82);
             this.bunifuPanel1.TabIndex = 0;
             this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
@@ -126,8 +244,9 @@
             this.bunifuCheckBox4.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.bunifuCheckBox4.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuCheckBox4.CustomCheckmarkImage = null;
-            this.bunifuCheckBox4.Location = new System.Drawing.Point(830, 20);
-            this.bunifuCheckBox4.MinimumSize = new System.Drawing.Size(17, 17);
+            this.bunifuCheckBox4.Location = new System.Drawing.Point(1107, 25);
+            this.bunifuCheckBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuCheckBox4.MinimumSize = new System.Drawing.Size(23, 21);
             this.bunifuCheckBox4.Name = "bunifuCheckBox4";
             this.bunifuCheckBox4.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
             this.bunifuCheckBox4.OnCheck.BorderRadius = 12;
@@ -155,7 +274,7 @@
             this.bunifuCheckBox4.OnUncheck.BorderRadius = 12;
             this.bunifuCheckBox4.OnUncheck.BorderThickness = 1;
             this.bunifuCheckBox4.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.bunifuCheckBox4.Size = new System.Drawing.Size(21, 21);
+            this.bunifuCheckBox4.Size = new System.Drawing.Size(28, 28);
             this.bunifuCheckBox4.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.bunifuCheckBox4.TabIndex = 9;
             this.bunifuCheckBox4.ThreeState = false;
@@ -179,8 +298,9 @@
             this.bunifuCheckBox3.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.bunifuCheckBox3.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuCheckBox3.CustomCheckmarkImage = null;
-            this.bunifuCheckBox3.Location = new System.Drawing.Point(664, 18);
-            this.bunifuCheckBox3.MinimumSize = new System.Drawing.Size(17, 17);
+            this.bunifuCheckBox3.Location = new System.Drawing.Point(885, 22);
+            this.bunifuCheckBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuCheckBox3.MinimumSize = new System.Drawing.Size(23, 21);
             this.bunifuCheckBox3.Name = "bunifuCheckBox3";
             this.bunifuCheckBox3.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
             this.bunifuCheckBox3.OnCheck.BorderRadius = 12;
@@ -208,7 +328,7 @@
             this.bunifuCheckBox3.OnUncheck.BorderRadius = 12;
             this.bunifuCheckBox3.OnUncheck.BorderThickness = 1;
             this.bunifuCheckBox3.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.bunifuCheckBox3.Size = new System.Drawing.Size(21, 21);
+            this.bunifuCheckBox3.Size = new System.Drawing.Size(28, 28);
             this.bunifuCheckBox3.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.bunifuCheckBox3.TabIndex = 8;
             this.bunifuCheckBox3.ThreeState = false;
@@ -232,8 +352,9 @@
             this.bunifuCheckBox2.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.bunifuCheckBox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuCheckBox2.CustomCheckmarkImage = null;
-            this.bunifuCheckBox2.Location = new System.Drawing.Point(489, 18);
-            this.bunifuCheckBox2.MinimumSize = new System.Drawing.Size(17, 17);
+            this.bunifuCheckBox2.Location = new System.Drawing.Point(652, 22);
+            this.bunifuCheckBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuCheckBox2.MinimumSize = new System.Drawing.Size(23, 21);
             this.bunifuCheckBox2.Name = "bunifuCheckBox2";
             this.bunifuCheckBox2.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
             this.bunifuCheckBox2.OnCheck.BorderRadius = 12;
@@ -261,7 +382,7 @@
             this.bunifuCheckBox2.OnUncheck.BorderRadius = 12;
             this.bunifuCheckBox2.OnUncheck.BorderThickness = 1;
             this.bunifuCheckBox2.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.bunifuCheckBox2.Size = new System.Drawing.Size(21, 21);
+            this.bunifuCheckBox2.Size = new System.Drawing.Size(28, 28);
             this.bunifuCheckBox2.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.bunifuCheckBox2.TabIndex = 7;
             this.bunifuCheckBox2.ThreeState = false;
@@ -285,8 +406,9 @@
             this.bunifuCheckBox1.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.bunifuCheckBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuCheckBox1.CustomCheckmarkImage = null;
-            this.bunifuCheckBox1.Location = new System.Drawing.Point(321, 18);
-            this.bunifuCheckBox1.MinimumSize = new System.Drawing.Size(17, 17);
+            this.bunifuCheckBox1.Location = new System.Drawing.Point(428, 22);
+            this.bunifuCheckBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuCheckBox1.MinimumSize = new System.Drawing.Size(23, 21);
             this.bunifuCheckBox1.Name = "bunifuCheckBox1";
             this.bunifuCheckBox1.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
             this.bunifuCheckBox1.OnCheck.BorderRadius = 12;
@@ -314,7 +436,7 @@
             this.bunifuCheckBox1.OnUncheck.BorderRadius = 12;
             this.bunifuCheckBox1.OnUncheck.BorderThickness = 1;
             this.bunifuCheckBox1.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.bunifuCheckBox1.Size = new System.Drawing.Size(21, 21);
+            this.bunifuCheckBox1.Size = new System.Drawing.Size(28, 28);
             this.bunifuCheckBox1.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.bunifuCheckBox1.TabIndex = 6;
             this.bunifuCheckBox1.ThreeState = false;
@@ -362,9 +484,10 @@
             "Builder",
             "IT"});
             this.bunifuDropdown3.ItemTopMargin = 3;
-            this.bunifuDropdown3.Location = new System.Drawing.Point(850, 11);
+            this.bunifuDropdown3.Location = new System.Drawing.Point(1133, 14);
+            this.bunifuDropdown3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuDropdown3.Name = "bunifuDropdown3";
-            this.bunifuDropdown3.Size = new System.Drawing.Size(142, 36);
+            this.bunifuDropdown3.Size = new System.Drawing.Size(188, 36);
             this.bunifuDropdown3.TabIndex = 5;
             this.bunifuDropdown3.Text = null;
             this.bunifuDropdown3.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -411,9 +534,10 @@
             "Builder",
             "IT"});
             this.bunifuDropdown2.ItemTopMargin = 3;
-            this.bunifuDropdown2.Location = new System.Drawing.Point(684, 11);
+            this.bunifuDropdown2.Location = new System.Drawing.Point(912, 14);
+            this.bunifuDropdown2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.Size = new System.Drawing.Size(142, 36);
+            this.bunifuDropdown2.Size = new System.Drawing.Size(188, 36);
             this.bunifuDropdown2.TabIndex = 4;
             this.bunifuDropdown2.Text = null;
             this.bunifuDropdown2.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -460,9 +584,10 @@
             "Builder",
             "IT"});
             this.bunifuDropdown1.ItemTopMargin = 3;
-            this.bunifuDropdown1.Location = new System.Drawing.Point(509, 11);
+            this.bunifuDropdown1.Location = new System.Drawing.Point(679, 14);
+            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.Size = new System.Drawing.Size(142, 36);
+            this.bunifuDropdown1.Size = new System.Drawing.Size(188, 36);
             this.bunifuDropdown1.TabIndex = 3;
             this.bunifuDropdown1.Text = null;
             this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -509,13 +634,26 @@
             "Builder",
             "IT"});
             this.dropDownOccupation.ItemTopMargin = 3;
-            this.dropDownOccupation.Location = new System.Drawing.Point(341, 11);
+            this.dropDownOccupation.Location = new System.Drawing.Point(455, 14);
+            this.dropDownOccupation.Margin = new System.Windows.Forms.Padding(4);
             this.dropDownOccupation.Name = "dropDownOccupation";
-            this.dropDownOccupation.Size = new System.Drawing.Size(142, 36);
+            this.dropDownOccupation.Size = new System.Drawing.Size(188, 36);
             this.dropDownOccupation.TabIndex = 2;
             this.dropDownOccupation.Text = null;
             this.dropDownOccupation.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.dropDownOccupation.TextLeftMargin = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::WP_Final_Project.Properties.Resources.icons8_Search_512px_1;
+            this.pictureBox1.Location = new System.Drawing.Point(353, 18);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // bunifuTextBox1
             // 
@@ -545,7 +683,8 @@
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(25, 14);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(33, 17);
+            this.bunifuTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -571,7 +710,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnIdleState = stateProperties4;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBox1.PlaceholderText = "Find Name...";
@@ -581,7 +720,7 @@
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(234, 27);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(312, 34);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox1.TabIndex = 0;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -592,135 +731,19 @@
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
             // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(12, 12);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(69, 15);
-            this.bunifuLabel1.TabIndex = 0;
-            this.bunifuLabel1.Text = "bunifuLabel1";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.BorderRadius = 1;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(68)))), ((int)(((byte)(128)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(212)))), ((int)(((byte)(53)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(6)))), ((int)(((byte)(90)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(65)))), ((int)(((byte)(214)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 65);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1005, 45);
-            this.bunifuGradientPanel1.TabIndex = 3;
-            // 
-            // gvWorkerList
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.gvWorkerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gvWorkerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gvWorkerList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gvWorkerList.ColumnHeadersHeight = 45;
-            this.gvWorkerList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13,
-            this.Column14});
-            this.gvWorkerList.Location = new System.Drawing.Point(-1, 66);
-            this.gvWorkerList.Name = "gvWorkerList";
-            this.gvWorkerList.ReadOnly = true;
-            this.gvWorkerList.RowHeadersVisible = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.gvWorkerList.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.gvWorkerList.RowTemplate.DividerHeight = 5;
-            this.gvWorkerList.RowTemplate.Height = 45;
-            this.gvWorkerList.RowTemplate.ReadOnly = true;
-            this.gvWorkerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvWorkerList.Size = new System.Drawing.Size(1005, 446);
-            this.gvWorkerList.TabIndex = 4;
-            this.gvWorkerList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.kryptonDataGridView1_CellFormatting);
-            this.gvWorkerList.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.kryptonDataGridView1_RowsAdded);
-            this.gvWorkerList.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.kryptonDataGridView1_RowsRemoved);
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.Image = global::WP_Final_Project.Properties.Resources.icons8_account_480px;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Column9";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Column10";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Column11";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Column12";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "Column13";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "Column14";
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
-            // 
             // WorkerList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.gvWorkerList);
             this.Controls.Add(this.bunifuPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "WorkerList";
-            this.Size = new System.Drawing.Size(1005, 519);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.bunifuPanel1.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1340, 639);
             ((System.ComponentModel.ISupportInitialize)(this.gvWorkerList)).EndInit();
+            this.bunifuPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
