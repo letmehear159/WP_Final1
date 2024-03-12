@@ -103,12 +103,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AccountSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountSetting.Designer.cs">
+      <DependentUpon>AccountSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkerList.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="WorkerList.Designer.cs">
       <DependentUpon>WorkerList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountSetting.resx">
+      <DependentUpon>AccountSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
