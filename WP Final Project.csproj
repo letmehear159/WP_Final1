@@ -40,6 +40,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
@@ -61,15 +64,26 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
       <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
       <HintPath>C:\Users\DELL\Desktop\bunifu.ui.winforms.4.1.1\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
     </Reference>
+    <Reference Include="Krypton.Toolkit, Version=80.24.3.64, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>packages\Krypton.Toolkit.80.24.3.64\lib\net472\Krypton.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -112,6 +126,7 @@
     <EmbeddedResource Include="WorkerList.resx">
       <DependentUpon>WorkerList.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -160,6 +175,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_search_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_worker_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_worker_480px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Search_512px_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
