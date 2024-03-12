@@ -43,3 +43,15 @@ C:\UTE\Test\WP_Final1\obj\Debug\WP Final.3EF58AF2.Up2Date
 C:\UTE\Test\WP_Final1\obj\Debug\WP Final Project.exe
 C:\UTE\Test\WP_Final1\obj\Debug\WP Final Project.pdb
 D:\Visual Studio\WindownForm\WP Final Project\obj\Debug\WP_Final_Project.AccountSetting.resources
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.csproj.AssemblyReference.cache
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP_Final_Project.AccountSetting.resources
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP_Final_Project.Form1.resources
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP_Final_Project.JobInfo.resources
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP_Final_Project.Properties.Resources.resources
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP_Final_Project.UCJobCard.resources
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP_Final_Project.UCJobList.resources
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP_Final_Project.WorkerList.resources
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.csproj.GenerateResource.cache
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.exe.licenses
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.exe
+D:\coding\VS\WIPR\FINALPROJECT\WP_Final1\obj\Debug\WP Final Project.pdb
