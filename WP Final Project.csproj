@@ -115,6 +115,12 @@
     <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCJobCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCJobCard.Designer.cs">
+      <DependentUpon>UCJobCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCJobList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +156,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UCJobCard.resx">
+      <DependentUpon>UCJobCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCJobList.resx">
       <DependentUpon>UCJobList.cs</DependentUpon>
     </EmbeddedResource>
